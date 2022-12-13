@@ -294,7 +294,7 @@ body {
   padding-top: 27px;
   padding-bottom: 27px;
 
-  background-color: var(--portfolio-overlay);
+  background-color: var(--bg-overlay-color);
 }
 
 /* NASZ ZESPÓŁ */
@@ -645,9 +645,18 @@ figure:hover .overlay {
   left: 0;
   width: 370px;
   height: 294px;
-  background-color: var(--selection-color);
+  background-color: var(--portfolio-overlay);
   transform: translatex(-100%);
   transition: transform 250ms ease;
+  padding: 49px 25px 49px 24px;
+}
+.overlay > p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+
+  color: var(--footer-logo-address-color);
 }
 
 /*PORTFOLIO FOOTER */
