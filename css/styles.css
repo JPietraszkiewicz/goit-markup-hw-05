@@ -271,6 +271,30 @@ body {
   color: var(--primary-color);
   margin: 0 auto;
 }
+.profession-item {
+  position: relative;
+  font-size: 0;
+}
+
+.profession-item > .label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--hero-font-color);
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: var(--bg-overlay-color);
+}
 
 /* NASZ ZESPÓŁ */
 
