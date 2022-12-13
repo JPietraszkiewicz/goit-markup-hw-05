@@ -620,7 +620,8 @@ figure:hover {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 figure:hover .overlay {
-  transform: translatex(0);
+  transform: translatey(0);
+  z-index: 1;
 }
 
 .projects-pic-title {
@@ -643,12 +644,22 @@ figure:hover .overlay {
   position: absolute;
   top: 0;
   left: 0;
+
   width: 370px;
   height: 294px;
   background-color: var(--portfolio-overlay);
-  transform: translatex(-100%);
+  transform: translatey(110%);
   transition: transform 250ms ease;
   padding: 49px 25px 49px 24px;
+}
+.overlay-box {
+  position: relative;
+
+  width: 370px;
+  height: 294px;
+  z-index: 0;
+}
+.projects-caption {
 }
 .overlay > p {
   font-weight: 400;
@@ -674,4 +685,8 @@ figure:hover .overlay {
 .portfolio-footer-mail:hover,
 .portfolio-footer-mail:focus {
   color: var(--selection-color);
+}
+/*-----BACKDROP-----*/
+
+.backdrop {
 }
