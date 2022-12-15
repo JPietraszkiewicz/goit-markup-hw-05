@@ -452,6 +452,8 @@ body {
 .footer {
   background-color: var(--background-color);
   height: 252px;
+  width: 1600px;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -609,20 +611,24 @@ body {
   flex-basis: calc((100%-60px) / 3);
 }
 
-figure {
+.projects-list figure {
   border: 1px solid #eeeeee;
   margin-top: 30px;
 }
 
-figure:hover {
+.projects-list figure:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-figure:hover .overlay {
+.projects-list figure:focus {
+  outline: none;
+}
+.projects-list figure:hover .overlay {
   transform: translatey(0);
 }
-figure:focus .overlay {
+.projects-list figure:focus .overlay {
   transform: translatey(0);
+  outline: 0;
 }
 .overlay-box {
   position: relative;
