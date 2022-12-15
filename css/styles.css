@@ -80,6 +80,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item:hover,
@@ -130,6 +131,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--header-contacts-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-tel-link {
   display: flex;
@@ -141,20 +143,17 @@ body {
 }
 
 .header-tel-link:hover,
-.header-tel-link:focus,
-.header-tel-link:active {
+.header-tel-link:focus {
   color: var(--selection-color);
   fill: var(--selection-color);
 }
 .contact-icon:hover,
-.contact-icon:focus,
-.contact-icon:active {
+.contact-icon:focus {
   fill: currentColor;
 }
 
 .header-mail-link:hover,
-.header-mail-link:focus,
-.header-mail-link:active {
+.header-mail-link:focus {
   color: var(--selection-color);
 }
 
@@ -398,6 +397,7 @@ body {
   height: 44px;
   justify-content: center;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sm-team-link:hover {
   border-radius: 50%;
@@ -419,6 +419,7 @@ body {
 
 .sm-icon {
   fill: var(--icon-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* NASI KLIENCI */
@@ -444,9 +445,9 @@ body {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover,
-.clients-link:active {
+.clients-link:hover {
   border-color: var(--selection-color);
 }
 .clients-link:focus {
@@ -472,6 +473,7 @@ body {
 
 .clients-icon {
   fill: var(--icon-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* FOOTER */
@@ -515,6 +517,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ftr-sm-link:hover {
   background-color: var(--selection-color);
@@ -563,6 +566,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--footer-links-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tel-link:hover,
