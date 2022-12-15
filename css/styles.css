@@ -13,6 +13,7 @@
   --icon-color: rgba(175, 177, 184, 1);
   --footer-icons-bg: rgba(255, 255, 255, 0.1);
   --portfolio-overlay: rgba(33, 150, 243, 0.9);
+  --backdrop-color: rgba(0, 0, 0, 0.2);
 }
 
 *,
@@ -729,4 +730,39 @@ body {
 /*-----BACKDROP-----*/
 
 .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backdrop-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+
+  background: var(--hero-font-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+  background: var(--hero-font-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-right: 8px;
+  text-align: center;
+  cursor: pointer;
 }
