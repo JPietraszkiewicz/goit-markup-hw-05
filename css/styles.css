@@ -33,6 +33,7 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
 }
 /* HEADER */
 
@@ -85,6 +86,32 @@ body {
 .nav-item:focus {
   color: var(--selection-color);
 }
+
+.nav-portfolio-link:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 58px;
+  height: 4px;
+  background-color: var(--selection-color);
+  border-radius: 2px;
+  align-items: center;
+  bottom: 0;
+}
+
+.nav-agency-link:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  background-color: var(--selection-color);
+  border-radius: 2px;
+  border-radius: 2px;
+  align-items: center;
+  bottom: 0;
+}
+
 .contacts-list {
   display: flex;
   gap: 30px;
