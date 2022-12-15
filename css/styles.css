@@ -609,6 +609,9 @@ body {
   margin: 0 4px;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters-btn:hover,
@@ -645,6 +648,8 @@ body {
 .projects-list figure {
   border: 1px solid #eeeeee;
   margin-top: 30px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list figure:hover {
@@ -714,6 +719,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--footer-links-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-footer-mail:hover,
