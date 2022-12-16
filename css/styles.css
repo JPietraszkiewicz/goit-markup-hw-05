@@ -776,7 +776,12 @@ body {
   padding: 0;
   cursor: pointer;
   display: flex;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-icon {
+  display: flex;
 }
 
 .is-hidden .modal {
