@@ -89,7 +89,7 @@ body {
   color: var(--selection-color);
 }
 
-.nav-portfolio-link:hover::after {
+.nav-portfolio-link::after {
   content: "";
   display: block;
   position: absolute;
@@ -101,14 +101,13 @@ body {
   bottom: 0;
 }
 
-.nav-agency-link:hover::after {
+.nav-agency-link::after {
   content: "";
   display: block;
   position: absolute;
   width: 53px;
   height: 4px;
   background-color: var(--selection-color);
-  border-radius: 2px;
   border-radius: 2px;
   align-items: center;
   bottom: 0;
@@ -679,8 +678,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+
   background-color: var(--portfolio-overlay);
-  transform: translatey(100%);
+  transform: translatey(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 49px 25px 49px 24px;
 }
@@ -739,10 +739,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 250ms ease-out;
 }
 
 .modal {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
 
@@ -752,6 +756,8 @@ body {
   border-radius: 4px;
   display: flex;
   justify-content: flex-end;
+  transition: transform;
+  transform: scale(1) 250ms ease-in-out;
 }
 
 .close-btn {
@@ -765,4 +771,15 @@ body {
   margin-right: 8px;
   text-align: center;
   cursor: pointer;
+}
+
+.backdrop.is-hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-hidden .modal {
+  transform: scale(0);
 }
