@@ -741,7 +741,12 @@ body {
   justify-content: center;
   transition: opacity 250ms ease-out;
 }
-
+.backdrop.is-hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -771,13 +776,8 @@ body {
   margin-right: 8px;
   text-align: center;
   cursor: pointer;
-}
-
-.backdrop.is-hidden {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  display: flex;
+  align-items: center;
 }
 
 .is-hidden .modal {
