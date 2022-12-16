@@ -771,13 +771,12 @@ body {
   background: var(--hero-font-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  box-sizing: border-box;
   margin-top: 8px;
   margin-right: 8px;
-  text-align: center;
+  padding: 0;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  align-content: center;
 }
 
 .is-hidden .modal {
